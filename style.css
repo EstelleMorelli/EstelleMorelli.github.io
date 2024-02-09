@@ -1,0 +1,29 @@
+body{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/fond.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+#chevalet{
+    display: block;
+    position: fixed;
+    left: 49%;
+    top: 16.4%;
+}
+#pc{
+    display: block;
+    position: fixed;
+    top: 35.5%;
+    left: 9%;
+}
+#miroir{
+    display: block;
+    position: fixed;
+    top: 24%;
+    left: 31.5%;
+}
+img:hover{
+    filter: drop-shadow(0 0 1rem black);
+}
