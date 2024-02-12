@@ -7,11 +7,9 @@ body{
     background-position: bottom;
 
 }
-
 article{
-    display: none;
+    display: hidden;
 }
-
 #chevalet{
     display: block;
     position: fixed;
@@ -37,6 +35,8 @@ article{
     left: 31.5%;*/
 
 }
+#pc
+
 
 img:hover{
     filter: drop-shadow(0 0 1rem black);
