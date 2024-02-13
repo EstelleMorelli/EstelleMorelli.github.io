@@ -1,5 +1,13 @@
-@media screen and (min-device-width:600px) {
-body{
+@media screen and (max-device-width:600px) {
+    body {
+      transform: rotate(90deg);
+      background-image: url("images/fond000.jpg");
+    }
+  }
+
+  @media screen and (min-device-width:600px) {
+
+    body{
     display: flex;
     height: 100vh;
     background-image: url("images/fond00.jpg");
@@ -8,7 +16,37 @@ body{
 
 }
 
+/*@keyframes affichage_texte {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
 article{
+    visibility: hidden;
+}
+
+article:hover {
+    visibility: visible;
+}
+
+#pc:active {
+    animation: 2s affichage_texte 1;
+}*/
+
+#gout_dev{
+    position: relative;
+    width: 50vw;
+    height: auto;
+    background-color: aliceblue;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 5%;
+    margin: 5%;
+    z-index: 1;
     display: none;
 }
 
@@ -20,54 +58,7 @@ article{
     left: 49%;
     top: 25%;
 }
-#pc{
-    display: block;
-    position: fixed;
-    width: 12%;
-    height: 20%;
-    top: 33%;
-    left: 9%;
-}
-#miroir{
-    display: block;
-    position: fixed;
-    width: 10%;
-    height: 62%;
-    top: 20%;
-    left: 31.5%;*/
 
-}
-
-img:hover{
-    filter: drop-shadow(0 0 1rem black);
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-}
-
-@media screen and (max-device-width:600px) {
-  body {
-    transform: rotate(90deg);
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("images/fond000.jpg");
-    background-size: cover;
-    background-position: bottom;
-  }
-  article{
-    display: none;
-}
-
-#chevalet{
-    display: block;
-    position: fixed;
-    width: 19%;
-    height: 62%;
-    left: 49%;
-    top: 25%;
-}
 #pc{
     display: block;
     position: fixed;
