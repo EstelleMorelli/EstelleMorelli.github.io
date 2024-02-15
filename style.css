@@ -37,7 +37,7 @@ article:hover {
     animation: 2s affichage_texte 1;
 }*/
 
-#gout_dev{
+#gout_dev, #music, #aboutme {
     position: relative;
     width: 50vw;
     height: auto;
@@ -49,6 +49,44 @@ article:hover {
     z-index: 1;
     display: none;
 }
+#gout_dev{
+
+}
+#music {
+    margin: 5% 20%;
+}
+#aboutme {
+    margin: 30% 50%;
+    align-self: flex-end;
+}
+
+#pc{
+    display: block;
+    position: fixed;
+    width: 12%;
+    height: 20%;
+    top: 35%;
+    left: 9%;
+}
+
+#radio{
+    display: block;
+    position: fixed;
+    width: 10%;
+    height: 20%;
+    top: 23%;
+    left: 20%;
+}
+
+#miroir{
+    display: block;
+    position: fixed;
+    width: 10%;
+    height: 60%;
+    top: 22%;
+    left: 31.5%;*/
+
+}
 
 #chevalet{
     display: block;
@@ -59,22 +97,13 @@ article:hover {
     top: 25%;
 }
 
-#pc{
+#book{
     display: block;
     position: fixed;
-    width: 12%;
-    height: 20%;
-    top: 33%;
-    left: 9%;
-}
-#miroir{
-    display: block;
-    position: fixed;
-    width: 10%;
-    height: 62%;
-    top: 20%;
-    left: 31.5%;*/
-
+    width: 18%;
+    height: 23%;
+    left: 67%;
+    top: 72%;
 }
 
 img:hover{
