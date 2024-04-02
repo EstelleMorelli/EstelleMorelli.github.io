@@ -12,7 +12,6 @@ const star = {
       //document.querySelector(".scripts").innerHTML = '<script class="script3" src="script3.js"></script>';
       document.querySelector(".styles").innerHTML ='<link class="style2" href="style2.css" rel="stylesheet">';
       star.mouseStar();
-      console.log("on est dans le on");
     } else {
       document.querySelector(".style2").remove();
      }
