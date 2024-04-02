@@ -43,6 +43,7 @@ const buttons = {
         function toggleAudio() {
             if (audio.paused) {
                 audio.play();
+                audio.volume = 0.3;
             } else {
                 audio.pause();
             }
