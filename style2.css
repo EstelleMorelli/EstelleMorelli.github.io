@@ -1,11 +1,12 @@
  body{
   cursor: none;
  }
+
  #danseurs{
   display: block;
   position: absolute;
   top: 410px;
-  left: 750px;
+  left: 800px;
   z-index: 3;
  }
   .note {
@@ -14,7 +15,7 @@
     height: 20px;
     background-image: url('images/star.png');
     background-size: cover;
-    animation: rotateNote 1s linear infinite;
+    animation: rotateNote 5s linear infinite;
     z-index: 1;
   }
   
