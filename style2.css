@@ -4,15 +4,17 @@
  #danseurs{
   display: block;
   position: absolute;
+  top: 410px;
+  left: 700px;
   z-index: 3;
  }
   .note {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: url('images/sparkle.png');
+    background-image: url('images/star.png');
     background-size: cover;
-    animation: rotateNote 2s linear infinite;
+    animation: rotateNote 5s linear infinite;
     z-index: 1;
   }
   
