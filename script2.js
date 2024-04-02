@@ -44,6 +44,7 @@ const buttons = {
             if (audio.paused) {
                 audio.play();
                 audio.volume = 0.3;
+                console.log("c'est bien la bonne maj");
             } else {
                 audio.pause();
             }
