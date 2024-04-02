@@ -1,9 +1,11 @@
 const buttons = {
 
+    allArticles: document.querySelectorAll("article"),
+     
     init: function () {
 
         for (const button of document.querySelectorAll(".closingButton")) {
-            button.addEventListener("click", buttons.handleDisplayParent);
+            button.addEventListener("click", buttons.handleDisplayParents);
         }
         for (const cImg of document.querySelectorAll(".clickImg")) {
             cImg.addEventListener("click", buttons.handleDisplayChild);
@@ -11,9 +13,9 @@ const buttons = {
         buttons.handleMusic();
     },
 
-    handleDisplayParent: function (event) {
+    handleDisplayParents: function (event) {
 
-        buttons.changeDisplayParent(event.currentTarget);
+        buttons.changeDisplayParents(event.currentTarget);
     },
     handleDisplayChild: function (event) {
 
@@ -21,13 +23,15 @@ const buttons = {
 
     },
 
-    changeDisplayParent: function (elementDisplay) {
-        console.log(elementDisplay.parentNode);
-        elementDisplay.parentNode.style.display = "none";
-        console.log(elementDisplay.parentNode.style.display);
+    changeDisplayParents: function (elementDisplay) {
+        elementDisplay.parentNode.style.display = "none";     
     },
 
     changeDisplayChild: function (elementDisplay) {
+        for (const article of buttons.allArticles){
+            article.style.display = "none";
+            console.log(article);
+         }
         elementDisplay.nextElementSibling.style.display = "block";
     },
 
