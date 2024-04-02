@@ -30,7 +30,6 @@ const buttons = {
     changeDisplayChild: function (elementDisplay) {
         for (const article of buttons.allArticles){
             article.style.display = "none";
-            console.log(article);
          }
         elementDisplay.nextElementSibling.style.display = "block";
     },

@@ -1,9 +1,8 @@
-
-
 body{
     /*box-sizing: content-box;*/
     display: flex;
     background-color: blanchedalmond;
+    cursor: pointer;
 }
 main{
     margin: auto;
