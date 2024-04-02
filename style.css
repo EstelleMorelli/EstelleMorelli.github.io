@@ -18,7 +18,7 @@ main{
     padding: 20px;
     margin: 50px;
     display: none;
-    z-index: 1;
+    z-index: 3;
 }
 
 /*#music {
@@ -200,6 +200,7 @@ main{
         height: 120px;
         top: 320px;
         left: 280px;
+        z-index: 2;
     }
     
     #miroir{

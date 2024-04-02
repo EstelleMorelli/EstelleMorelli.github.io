@@ -1,0 +1,32 @@
+body {
+    cursor: none; /* Cacher le curseur par défaut */
+  }
+  
+  .note {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('images/star.png');
+    background-size: cover;
+    animation: rotateNote 2s linear infinite;
+    z-index: 1;
+  }
+  
+  /*@keyframes moveNote {
+    0% {
+      transform: translateY(0) rotateZ(0);
+    }
+    100% {
+      transform: translateY(-100vh) rotateZ(720deg);
+      opacity: 0;
+    }
+  }*/
+
+  @keyframes rotateNote {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(60deg);
+    }
+}
