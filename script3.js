@@ -28,7 +28,7 @@ const star = {
       setTimeout(function () {
         note.remove();
       }, 1000); 
-    });
+    }, 200);
   },
 };
 
