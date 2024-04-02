@@ -8,7 +8,9 @@ main{
     margin: auto;
     position: relative;
 }
-
+#danseurs{
+    display: none;
+}
 #gout_dev, #music, #aboutme, #environnement {
     position: fixed;
     background-color: rgba(240, 248, 255, 70%);
