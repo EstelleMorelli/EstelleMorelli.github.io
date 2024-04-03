@@ -42,7 +42,6 @@ const buttons = {
         // Fonction pour jouer ou mettre en pause la musique
         function toggleAudio() {
             if (audio.paused) {
-                audio.volume = 0.3;
                 audio.play();
                 
             } else {
