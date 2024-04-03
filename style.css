@@ -2,7 +2,6 @@ body{
     /*box-sizing: content-box;*/
     display: flex;
     background-color: blanchedalmond;
-    cursor: pointer;
 }
 main{
     margin: auto;
@@ -17,7 +16,7 @@ main{
     font-weight: bold;
     border-radius: 50px;
     padding: 20px;
-    margin: 50px;
+    margin: auto;
     display: none;
     z-index: 3;
 }
@@ -243,24 +242,24 @@ main{
 
     #gout_dev{
         position: absolute;
-        top: 150px;
-        left: 130px;
+        top: 100px;
+        left: 150px;
     }
     #music{
         position: absolute;
-        top: 145px;
-        left: 200px;
+        top: 100px;
+        left: 150px;
     }
     #aboutme{
         position: absolute;
-        left: 200px;
-        top: 300px;
+        top: 100px;
+        left: 150px;
     }
 
     #environnement{
         position: absolute;
-        left: 200px;
-        top: 300px;
+        top: 100px;
+        left: 150px;
     }
 
     

@@ -1,29 +1,8 @@
- body{
-  cursor: none;
- }
-
- #danseurs{
+#danseurs{
   display: block;
   position: absolute;
   top: 410px;
-  left: 800px;
+  left: 620px;
   z-index: 3;
  }
-  .note {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-image: url('images/star.png');
-    background-size: cover;
-    animation: rotateNote 5s linear infinite;
-    z-index: 1;
-  }
-  
-  @keyframes rotateNote {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(60deg);
-    }
-}
+ 
