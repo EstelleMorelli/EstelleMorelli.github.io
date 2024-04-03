@@ -1,3 +1,14 @@
+/* Pour les navigateurs basés sur WebKit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 5px; /* Largeur de la barre de défilement */
+  }
+  
+  /* Pour les navigateurs basés sur WebKit (Chrome, Safari, Opera) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Couleur de la barre de défilement */
+    border-radius: 5px; /* Rayon de la bordure de la barre de défilement */
+  }
+
 body{
     /*box-sizing: content-box;*/
     display: flex;
@@ -10,6 +21,27 @@ main{
 #danseurs{
     display: none;
 }
+.closingButton{
+  background-color: #5c9e87; /* couleur de fond */
+  border: none; /* pas de bordure */
+  color: #ffffff; /* couleur du texte */
+  padding: 10px 20px; /* espacement intérieur */
+  text-align: center; /* alignement du texte */
+  text-decoration: none; /* pas de soulignement */
+  display: inline-block; /* affichage en ligne */
+  font-size: 16px; /* taille de la police */
+  border-radius: 20px; /* bordure arrondie */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ombre */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* police de caractères */
+  cursor: pointer; /* curseur de type main */
+  transition: background-color 0.3s, color 0.3s; /* transition d'animation */
+}
+
+.closingButton:hover {
+  background-color: #1d3e53; /* couleur de fond au survol */
+  color: #ffffff; /* couleur du texte au survol */
+}
+
 #gout_dev, #music, #aboutme, #environnement {
     position: fixed;
     background-color: rgba(240, 248, 255, 70%);
@@ -210,7 +242,7 @@ main{
         width: 900px;
 
     }
-    #gout_dev, #music, #aboutme {
+    #gout_dev, #aboutme, #environnement {
         max-width: 700px;
     }
 }
@@ -276,6 +308,14 @@ main{
         left: 978px;
         top: 390px;
     } 
+    #gout_dev, #aboutme, #environnement{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        max-width: 1150px;
+        max-height: 300px;
+        overflow: scroll;
+    }
 }
 @media screen and (min-device-width:1400px) {
     .mobile-portrait{
@@ -345,26 +385,13 @@ main{
         top: 470px;
     } 
 
-    #gout_dev{
+    #gout_dev, #aboutme, #environnement{
         position: absolute;
-        top: 100px;
+        top: 150px;
         left: 150px;
-    }
-    #music{
-        position: absolute;
-        top: 100px;
-        left: 150px;
-    }
-    #aboutme{
-        position: absolute;
-        top: 100px;
-        left: 150px;
-    }
-
-    #environnement{
-        position: absolute;
-        top: 100px;
-        left: 150px;
+        max-width: 1100px;
+        max-height: 300px;
+        overflow: scroll;
     }
 
     
