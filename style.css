@@ -83,17 +83,94 @@ main{
     cursor: pointer;
 }
 
-@media screen and (max-device-width:600px) {
+@media screen and (max-device-width:600px) and (orientation: portrait) {
+    .mobile-portrait{
+        display : block;
+        text-align: center;
+    }
+    main{
+        display: none;
+    }
+
+    
+}
+
+@media screen and (max-device-width:600px) and (orientation: landscape) {
+    .mobile-portrait{
+        display : none;
+    }
     #background {
-        transform: rotate(90deg);
-        width: auto;
+        width: 500px;
     }
-    #gout_dev, #music, #aboutme {
-        max-width: 300px;
+    #pc{
+        display: block;
+        position: absolute;
+        width: 57px;
+        height: 46px;
+        top: 136px;
+        left: 46px;
     }
+    
+    #radio{
+        display: block;
+        position: absolute;
+        width: 54px;
+        height: 43px;
+        top: 114px;
+        left: 100px;
+        z-index: 2;
+    }
+    
+    #miroir{
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 136px;
+        top: 107px;
+        left: 175px;
+    
+    }
+    
+    #chevalet{
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 143px;
+        left: 268px;
+        top: 107px;
+    }
+    
+    #book{
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 54px;
+        left: 321px;
+        top: 229px;
+    }
+
+    #plant{
+        display: block;
+        position: absolute;
+        width: 71px;
+        height: 89px;
+        left: 393px;
+        top: 168px;
+    } 
+    #gout_dev, #music, #aboutme, #environnement{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        max-width: 480px;
+        max-height: 260px;
+        overflow: scroll;
+    }
+
 }
 @media screen and (min-device-width:600px) {
-
+    .mobile-portrait{
+        display : none;
+    }
      #background {
         width: 600px;
     }
@@ -102,7 +179,9 @@ main{
     }
 }
 @media screen and (min-device-width:900px) {
-
+    .mobile-portrait{
+        display : none;
+    }
     #background {
         width: 900px;
 
@@ -112,7 +191,9 @@ main{
     }
 }
 @media screen and (min-device-width:1200px) {
-
+    .mobile-portrait{
+        display : none;
+    }
     #background {
         width: 1200px;
     }
@@ -175,7 +256,9 @@ main{
     } 
 }
 @media screen and (min-device-width:1400px) {
-
+    .mobile-portrait{
+        display : none;
+    }
     #background {
         width: 1400px;
 
