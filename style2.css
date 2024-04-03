@@ -9,7 +9,16 @@
    }
 }
 
-
+@media screen and (min-device-width:600px) and (orientation: landscape) {
+  #danseurs{
+    display: block;
+    position: absolute;
+    width: 50%;
+    top: 176px;
+    left: 160px;
+    z-index: 3;
+   }
+}
 
 @media screen and (min-device-width:1400px) {
 #danseurs{

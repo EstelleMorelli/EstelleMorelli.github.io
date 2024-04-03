@@ -21,59 +21,6 @@ main{
     z-index: 3;
 }
 
-/*#music {
-    margin: 5% 20%;
-}
-#aboutme {
-    margin: 30% 50%;
-    align-self: flex-end;
-}
-
-#pc{
-    display: block;
-    position: fixed;
-    width: 12%;
-    height: 20%;
-    top: 40%;
-    left: 9%;
-}
-
-#radio{
-    display: block;
-    position: fixed;
-    width: 10%;
-    height: 20%;
-    top: 30%;
-    left: 20%;
-}
-
-#miroir{
-    display: block;
-    position: fixed;
-    width: 10%;
-    height: 60%;
-    top: 22%;
-    left: 31.5%;
-
-}
-
-#chevalet{
-    display: block;
-    position: fixed;
-    width: 19%;
-    height: 62%;
-    left: 55%;
-    top: 25%;
-}
-
-#book{
-    display: block;
-    position: fixed;
-    width: 18%;
-    height: 23%;
-    left: 67%;
-    top: 72%;
-}*/
 
 #pc:hover, #radio:hover, #chevalet:hover, #miroir:hover, #book:hover, #plant:hover {
     filter: drop-shadow(0 0 1rem black);
@@ -167,7 +114,19 @@ main{
     }
 
 }
-@media screen and (min-device-width:600px) {
+
+@media screen and (min-device-width:600px) and (orientation: portrait) {
+    .mobile-portrait{
+        display : block;
+        text-align: center;
+    }
+    main{
+        display: none;
+    }
+
+    
+}
+@media screen and (min-device-width:600px) and (orientation: landscape) {
     .mobile-portrait{
         display : none;
     }
@@ -175,8 +134,73 @@ main{
         width: 600px;
     }
     #gout_dev, #music, #aboutme {
-        max-width: 400px;
+        max-width: 580px;
     }
+    #pc{
+        display: block;
+        position: absolute;
+        width: 69px;
+        height: 46px;
+        top: 163px;
+        left: 56px;
+    }
+    
+    #radio{
+        display: block;
+        position: absolute;
+        width: 64px;
+        height: 51px;
+        top: 137px;
+        left: 120px;
+        z-index: 2;
+    }
+    
+    #miroir{
+        display: block;
+        position: absolute;
+        width: 60px;
+        height: 163px;
+        top: 129px;
+        left: 210px;
+    
+    }
+    
+    #chevalet{
+        display: block;
+        position: absolute;
+        width: 116px;
+        height: 171px;
+        left: 321px;
+        top: 129px;
+    }
+    
+    #book{
+        display: block;
+        position: absolute;
+        width: 116px;
+        height: 64px;
+        left: 386px;
+        top: 274px;
+    }
+
+    #plant{
+        display: block;
+        position: absolute;
+        width: 86px;
+        height: 107px;
+        left: 471px;
+        top: 201px;
+    } 
+    #gout_dev, #music, #aboutme, #environnement{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        max-width: 580px;
+        max-height: 320px;
+        overflow: scroll;
+    }
+
+
 }
 @media screen and (min-device-width:900px) {
     .mobile-portrait{
@@ -197,9 +221,7 @@ main{
     #background {
         width: 1200px;
     }
-    #gout_dev, #music, #aboutme, #environnement {
-        max-width: 900px;
-    }
+    
     #pc{
         display: block;
         position: fixed;
