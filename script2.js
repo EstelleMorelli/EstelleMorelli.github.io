@@ -1,6 +1,7 @@
 const buttons = {
 
     allArticles: document.querySelectorAll("article"),
+    message: document.querySelector("#indication"),
      
     init: function () {
 
@@ -11,6 +12,8 @@ const buttons = {
             cImg.addEventListener("click", buttons.handleDisplayChild);
         }
         buttons.handleMusic();
+        buttons.message.style.display='block';
+        setTimeout(buttons.handleDisapearMessage, 7000);
     },
 
     handleDisplayParents: function (event) {
@@ -52,6 +55,12 @@ const buttons = {
         // Ajouter un événement de clic à l'image
         playButton.addEventListener("click", toggleAudio);
 
+    },
+    handleDisapearMessage: function (){
+        buttons.message.classList.add("fade-out");
+        setTimeout(function(){
+        buttons.message.style.display= 'none';
+        }, 15000);
     },
 };
 

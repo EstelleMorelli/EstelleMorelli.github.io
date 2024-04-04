@@ -21,6 +21,24 @@ main{
 #danseurs{
     display: none;
 }
+#indication{
+    position: fixed;
+    top:30px;
+    font-family: 'Manga Temple', sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 5s ease; /* Adjust duration and timing function as needed */
+}
 .closingButton{
   background-color: #5c9e87; /* couleur de fond */
   border: none; /* pas de bordure */
