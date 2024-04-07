@@ -82,6 +82,8 @@ main{
 
 @media screen and (max-device-width:600px) and (orientation: portrait) {
     .mobile-portrait{
+        font-family: 'Manga Temple', sans-serif;
+        font-size: large;
         display : block;
         text-align: center;
     }
