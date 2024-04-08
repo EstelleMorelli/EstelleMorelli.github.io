@@ -1,3 +1,6 @@
+::-webkit-scrollbar{
+    display: none;
+}
 body{
     /*box-sizing: content-box;*/
     display: flex;
@@ -22,7 +25,6 @@ main{
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-    
 }
 .fade-out {
     opacity: 0;
@@ -64,6 +66,7 @@ main{
     margin: auto;
     display: none;
     z-index: 3;
+    overflow: auto;
 }
 
 
@@ -175,7 +178,6 @@ main{
         left: 10px;
         max-width: 480px;
         max-height: 260px;
-        overflow: hidden;
     }
     #indices {
         position: absolute;
@@ -183,7 +185,6 @@ main{
         right: 20px;
         max-width: 400px;
         max-height: 300px;
-        overflow: hidden;
     }
 
 }
@@ -286,7 +287,6 @@ main{
         left: 50px;
         max-width: 600px;
         max-height: 340px;
-        overflow: hidden;
     }
     #indices {
         position: absolute;
@@ -294,7 +294,6 @@ main{
         right: 30px;
         max-width: 400px;
         max-height: 300px;
-        overflow: hidden;
     }
 
 
@@ -389,7 +388,6 @@ main{
         left: 96px;
         max-width: 700px;
         max-height: 350px;
-        overflow: hidden;
     }
     #indices {
         position: absolute;
@@ -397,7 +395,6 @@ main{
         right: 32px;
         max-width: 350px;
         max-height: 300px;
-        overflow: hidden;
     }
 }
 /* ECRANS 1200 à 1400 */
@@ -486,7 +483,6 @@ main{
         left: 129px;
         max-width: 943px;
         max-height: 350px;
-        overflow: hidden;
     }
     #indices {
         position: absolute;
@@ -494,7 +490,6 @@ main{
         right: 43px;
         max-width: 343px;
         max-height: 257px;
-        overflow: hidden;
     }
 }
 
@@ -588,7 +583,6 @@ main{
         left: 150px;
         max-width: 1100px;
         max-height: 350px;
-        overflow: hidden;
     }
     #indices {
         position: absolute;
@@ -596,7 +590,6 @@ main{
         right: 50px;
         max-width: 400px;
         max-height: 300px;
-        overflow: hidden;
     }
     
     
