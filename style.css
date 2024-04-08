@@ -60,7 +60,7 @@ main{
   color: #ffffff; /* couleur du texte au survol */
 }
 
-#gout_dev, #music, #aboutme, #environnement {
+#gout_dev, #security, #aboutme, #environnement {
     position: fixed;
     background-color: rgba(240, 248, 255, 70%);
     font-weight: bold;
@@ -72,7 +72,7 @@ main{
 }
 
 
-#pc:hover, #radio:hover, #chevalet:hover, #miroir:hover, #book:hover, #plant:hover {
+#pc:hover, #radio:hover, #chevalet:hover, #miroir:hover, #book:hover, #plant:hover, #key:hover {
     filter: drop-shadow(0 0 1rem black);
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -156,7 +156,7 @@ main{
         left: 393px;
         top: 168px;
     } 
-    #gout_dev, #music, #aboutme, #environnement{
+    #gout_dev, #security, #aboutme, #environnement{
         position: absolute;
         top: 10px;
         left: 10px;
@@ -243,7 +243,7 @@ main{
         left: 471px;
         top: 201px;
     } 
-    #gout_dev, #music, #aboutme, #environnement{
+    #gout_dev, #security, #aboutme, #environnement{
         position: absolute;
         top: 10px;
         left: 10px;
@@ -262,7 +262,7 @@ main{
         width: 900px;
 
     }
-    #gout_dev, #aboutme, #environnement {
+    #gout_dev, #aboutme, #environnement, #security {
         max-width: 700px;
     }
 }
@@ -328,7 +328,7 @@ main{
         left: 978px;
         top: 390px;
     } 
-    #gout_dev, #aboutme, #environnement{
+    #gout_dev, #aboutme, #environnement, #security{
         position: absolute;
         top: 10px;
         left: 10px;
@@ -345,7 +345,7 @@ main{
         width: 1400px;
 
     }
-    #gout_dev, #music, #aboutme {
+    #gout_dev, #environnement, #aboutme, #security {
         max-width: 1000px;
     }
 
@@ -356,6 +356,15 @@ main{
         height: 130px;
         top: 380px;
         left: 130px;
+    }
+
+    #key{
+        display: block;
+        position: absolute;
+        width: 42px;
+        height: 35px;
+        top: 545px;
+        left: 165px;
     }
     
     #radio{
@@ -405,7 +414,7 @@ main{
         top: 470px;
     } 
 
-    #gout_dev, #aboutme, #environnement{
+    #gout_dev, #aboutme, #environnement, #security{
         position: absolute;
         top: 150px;
         left: 150px;
