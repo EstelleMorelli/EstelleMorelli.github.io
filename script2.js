@@ -73,8 +73,6 @@ const buttons = {
 
     changeDisplayBrother: function (elementDisplay) {
         elementDisplay.parentNode.style.display = "none";
-        console.log(elementDisplay.parentNode);
-        console.log(elementDisplay.parentNode.nextElementSibling);
         elementDisplay.parentNode.nextElementSibling.style.display = "block";
     },
 };

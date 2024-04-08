@@ -75,7 +75,7 @@ main{
     cursor: pointer;
 }
 
-@media screen and (max-device-width:600px) and (orientation: portrait) {
+@media screen and (max-device-width:700px) and (orientation: portrait) {
     .mobile-portrait{
         font-family: 'Manga Temple', sans-serif;
         font-size: large;
@@ -89,9 +89,12 @@ main{
     
 }
 
-@media screen and (max-device-width:600px) and (orientation: landscape) {
+@media screen and (max-device-width:700px) and (orientation: landscape) {
     .mobile-portrait{
         display : none;
+    }
+    #indication{
+        font-size: small;
     }
     #background {
         width: 500px;
@@ -104,7 +107,14 @@ main{
         top: 136px;
         left: 46px;
     }
-    
+    #key{
+        display: block;
+        position: absolute;
+        width: 15px;
+        height: 13px;
+        top: 195px;
+        left: 59px;
+    }
     #radio{
         display: block;
         position: absolute;
@@ -151,7 +161,15 @@ main{
         left: 393px;
         top: 168px;
     } 
-    #gout_dev, #security, #aboutme, #environnement, #indices{
+    #help{
+        display: block;
+        position: absolute;
+        width: 18px;
+        height: 20px;
+        right: 20px;
+        top: 20px;
+    }
+    #gout_dev, #security, #aboutme, #environnement{
         position: absolute;
         top: 10px;
         left: 10px;
@@ -159,10 +177,18 @@ main{
         max-height: 260px;
         overflow: hidden;
     }
+    #indices {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        max-width: 400px;
+        max-height: 300px;
+        overflow: hidden;
+    }
 
 }
 
-@media screen and (min-device-width:600px) and (orientation: portrait) {
+@media screen and (min-device-width:700px) and (orientation: portrait) {
     .mobile-portrait{
         display : block;
         text-align: center;
@@ -173,94 +199,208 @@ main{
 
     
 }
-@media screen and (min-device-width:600px) and (orientation: landscape) {
+/* ECRANS 700 à 900 */
+@media screen and (min-device-width:700px) and (orientation: landscape) {
     .mobile-portrait{
         display : none;
     }
      #background {
-        width: 600px;
-    }
-    #gout_dev, #security, #aboutme, #environnement, #indices {
-        max-width: 580px;
+        width: 700px;
     }
     #pc{
         display: block;
         position: absolute;
-        width: 69px;
-        height: 46px;
-        top: 163px;
-        left: 56px;
+        width: 80px;
+        height: 65px;
+        top: 190px;
+        left: 65px;
     }
     
+    #key{
+        display: block;
+        position: absolute;
+        width: 21px;
+        height: 18px;
+        top: 273px;
+        left: 83px;
+        z-index: 2;
+    }
+
     #radio{
         display: block;
         position: absolute;
-        width: 64px;
-        height: 51px;
-        top: 137px;
-        left: 120px;
+        width: 75px;
+        height: 60px;
+        top: 160px;
+        left: 140px;
         z-index: 2;
     }
     
     #miroir{
         display: block;
         position: absolute;
-        width: 60px;
-        height: 163px;
-        top: 129px;
-        left: 210px;
+        width: 70px;
+        height: 190px;
+        top: 150px;
+        left: 245px;
     
     }
     
     #chevalet{
         display: block;
         position: absolute;
-        width: 116px;
-        height: 171px;
-        left: 321px;
-        top: 129px;
+        width: 135px;
+        height: 200px;
+        left: 375px;
+        top: 150px;
     }
     
     #book{
         display: block;
         position: absolute;
-        width: 116px;
-        height: 64px;
-        left: 386px;
-        top: 274px;
+        width: 135px;
+        height: 75px;
+        left: 450px;
+        top: 320px;
     }
 
     #plant{
         display: block;
         position: absolute;
-        width: 86px;
-        height: 107px;
-        left: 471px;
-        top: 201px;
+        width: 100px;
+        height: 125px;
+        left: 550px;
+        top: 235px;
     } 
-    #gout_dev, #security, #aboutme, #environnement, #indices{
+    #help{
+        display: block;
         position: absolute;
-        top: 10px;
-        left: 10px;
-        max-width: 580px;
-        max-height: 320px;
+        width: 25px;
+        height: 28px;
+        right: 20px;
+        top: 20px;
+    }
+    #gout_dev, #security, #aboutme, #environnement{
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        max-width: 600px;
+        max-height: 340px;
+        overflow: hidden;
+    }
+    #indices {
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        max-width: 400px;
+        max-height: 300px;
         overflow: hidden;
     }
 
 
 }
+/* ECRANS 900 à 1200 */
 @media screen and (min-device-width:900px) {
     .mobile-portrait{
         display : none;
     }
+
     #background {
         width: 900px;
 
     }
-    #gout_dev, #aboutme, #environnement, #security, #indices {
+    #pc{
+        display: block;
+        position: absolute;
+        width: 103px;
+        height: 84px;
+        top: 244px;
+        left: 84px;
+    }
+
+    #key{
+        display: block;
+        position: absolute;
+        width: 27px;
+        height: 23px;
+        top: 350px;
+        left: 106px;
+    }
+    
+    #radio{
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 77px;
+        top: 206px;
+        left: 180px;
+        z-index: 2;
+    }
+    
+    #miroir{
+        display: block;
+        position: absolute;
+        width: 90px;
+        height: 244px;
+        top: 193px;
+        left: 315px;
+    
+    }
+    
+    #chevalet{
+        display: block;
+        position: absolute;
+        width: 174px;
+        height: 257px;
+        left: 482px;
+        top: 193px;
+    }
+    
+    #book{
+        display: block;
+        position: absolute;
+        width: 174px;
+        height: 96px;
+        left: 579px;
+        top: 411px;
+    }
+
+    #plant{
+        display: block;
+        position: absolute;
+        width: 129px;
+        height: 161px;
+        left: 707px;
+        top: 302px;
+    } 
+
+    #help{
+        display: block;
+        position: absolute;
+        width: 32px;
+        height: 35px;
+        right: 20px;
+        top: 20px;
+    }
+
+    #gout_dev, #aboutme, #environnement, #security {
+        position: absolute;
+        top: 80px;
+        left: 96px;
         max-width: 700px;
+        max-height: 350px;
+        overflow: hidden;
+    }
+    #indices {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        max-width: 350px;
+        max-height: 300px;
+        overflow: hidden;
     }
 }
+/* ECRANS 1200 à 1400 */
 @media screen and (min-device-width:1200px) {
     .mobile-portrait{
         display : none;
@@ -271,67 +411,94 @@ main{
     
     #pc{
         display: block;
-        position: fixed;
-        width: 150px;
-        height: 120px;
-        top: 320px;
-        left: 110px;
+        position: absolute;
+        width: 137px;
+        height: 111px;
+        top: 326px;
+        left: 111px;
     }
-    
+    #key{
+        display: block;
+        position: absolute;
+        width: 36px;
+        height: 30px;
+        top: 467px;
+        left: 141px;
+    }
     #radio{
         display: block;
-        position: fixed;
-        width: 150px;
-        height: 120px;
-        top: 260px;
-        left: 250px;
+        position: absolute;
+        width: 129px;
+        height: 103px;
+        top: 274px;
+        left: 240px;
     }
     
     #miroir{
         display: block;
-        position: fixed;
+        position: absolute;
         width: 120px;
-        height: 380px;
-        top: 210px;
-        left: 400px;
+        height: 326px;
+        top: 257px;
+        left: 420px;
     
     }
     
     #chevalet{
         display: block;
-        position: fixed;
-        width: 250px;
-        height: 380px;
-        left: 650px;
-        top: 220px;
+        position: absolute;
+        width: 231px;
+        height: 343px;
+        left: 643px;
+        top: 257px;
     }
     
     #book{
         display: block;
-        position: fixed;
-        width: 230px;
-        height: 140px;
-        left: 800px;
-        top: 530px;
+        position: absolute;
+        width: 231px;
+        height: 129px;
+        left: 771px;
+        top: 549px;
     }
 
     #plant{
         display: block;
         position: absolute;
-        width: 170px;
-        height: 233px;
-        left: 978px;
-        top: 390px;
-    } 
-    #gout_dev, #aboutme, #environnement, #security, #indices{
+        width: 171px;
+        height: 214px;
+        left: 943px;
+        top: 403px;
+    }
+    
+    #help{
+        display: block;
         position: absolute;
-        top: 10px;
-        left: 10px;
-        max-width: 1150px;
-        max-height: 300px;
+        width: 43px;
+        height: 47px;
+        right: 20px;
+        top: 20px;
+    }
+
+    #gout_dev, #aboutme, #environnement, #security{
+        position: absolute;
+        top: 129px;
+        left: 129px;
+        max-width: 943px;
+        max-height: 350px;
+        overflow: hidden;
+    }
+    #indices {
+        position: absolute;
+        top: 43px;
+        right: 43px;
+        max-width: 343px;
+        max-height: 257px;
         overflow: hidden;
     }
 }
+
+/* ECRANS 1400 à 1800 */
 @media screen and (min-device-width:1400px) {
     .mobile-portrait{
         display : none;
@@ -339,9 +506,6 @@ main{
     #background {
         width: 1400px;
 
-    }
-    #gout_dev, #environnement, #aboutme, #security, #indices {
-        max-width: 1000px;
     }
 
     #pc{
@@ -423,13 +587,13 @@ main{
         top: 150px;
         left: 150px;
         max-width: 1100px;
-        max-height: 300px;
+        max-height: 350px;
         overflow: hidden;
     }
     #indices {
         position: absolute;
         top: 50px;
-        right: -870px;
+        right: 50px;
         max-width: 400px;
         max-height: 300px;
         overflow: hidden;
