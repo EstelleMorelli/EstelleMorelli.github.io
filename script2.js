@@ -1,6 +1,7 @@
 const buttons = {
 
     allArticles: document.querySelectorAll("article"),
+    allHelpText: document.querySelectorAll(".helpText"),
     message: document.querySelector("#indication"),
      
     init: function () {
@@ -10,6 +11,9 @@ const buttons = {
         }
         for (const cImg of document.querySelectorAll(".clickImg")) {
             cImg.addEventListener("click", buttons.handleDisplayChild);
+        }
+        for (const goNextButton of document.querySelectorAll(".goNextButton")){
+            goNextButton.addEventListener("click", buttons.handleDisplayBrother);
         }
         buttons.handleMusic();
         buttons.message.style.display='block';
@@ -61,6 +65,16 @@ const buttons = {
         setTimeout(function(){
         buttons.message.style.display= 'none';
         }, 15000);
+    },
+    handleDisplayBrother: function (event){
+        buttons.changeDisplayBrother(event.currentTarget);
+    },
+
+    changeDisplayBrother: function (elementDisplay) {
+        elementDisplay.parentNode.style.display = "none";
+        console.log(elementDisplay.parentNode);
+        console.log(elementDisplay.parentNode.nextElementSibling);
+        elementDisplay.parentNode.nextElementSibling.style.display = "block";
     },
 };
 
