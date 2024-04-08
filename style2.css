@@ -1,21 +1,40 @@
-@media screen and (max-device-width:600px) and (orientation: landscape) {
+@media screen and (max-device-width:700px) and (orientation: landscape) {
   #danseurs{
     display: block;
     position: absolute;
     width: 50%;
-    top: 146px;
-    left: 130px;
+    top: 160px;
+    left: 200px;
     z-index: 3;
    }
 }
 
-@media screen and (min-device-width:600px) and (orientation: landscape) {
+@media screen and (min-device-width:700px) and (orientation: landscape) {
   #danseurs{
     display: block;
     position: absolute;
     width: 50%;
-    top: 176px;
-    left: 160px;
+    top: 240px;
+    left: 280px;
+    z-index: 3;
+   }
+}
+
+@media screen and (min-device-width:900px) {
+  #danseurs{
+    display: block;
+    position: absolute;
+    top: 300px;
+    left: 370px;
+    z-index: 3;
+   }
+}
+@media screen and (min-device-width:1200px) {
+  #danseurs{
+    display: block;
+    position: absolute;
+    top: 410px;
+    left: 460px;
     z-index: 3;
    }
 }
@@ -24,8 +43,8 @@
 #danseurs{
   display: block;
   position: absolute;
-  top: 410px;
-  left: 400px;
+  top: 430px;
+  left: 530px;
   z-index: 3;
  }
 }

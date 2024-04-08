@@ -12,7 +12,9 @@ main{
 }
 #danseurs{
     display: none;
+    max-width: 20%;
 }
+
 #indication{
     position: fixed;
     top:30px;
