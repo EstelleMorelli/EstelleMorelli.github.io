@@ -60,7 +60,7 @@ main{
   color: #ffffff; /* couleur du texte au survol */
 }
 
-#gout_dev, #security, #aboutme, #environnement {
+#gout_dev, #security, #aboutme, #environnement, #indices {
     position: fixed;
     background-color: rgba(240, 248, 255, 70%);
     font-weight: bold;
@@ -72,7 +72,7 @@ main{
 }
 
 
-#pc:hover, #radio:hover, #chevalet:hover, #miroir:hover, #book:hover, #plant:hover, #key:hover {
+#pc:hover, #radio:hover, #chevalet:hover, #miroir:hover, #book:hover, #plant:hover, #key:hover, #help:hover {
     filter: drop-shadow(0 0 1rem black);
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -156,7 +156,7 @@ main{
         left: 393px;
         top: 168px;
     } 
-    #gout_dev, #security, #aboutme, #environnement{
+    #gout_dev, #security, #aboutme, #environnement, #indices{
         position: absolute;
         top: 10px;
         left: 10px;
@@ -185,7 +185,7 @@ main{
      #background {
         width: 600px;
     }
-    #gout_dev, #music, #aboutme {
+    #gout_dev, #security, #aboutme, #environnement, #indices {
         max-width: 580px;
     }
     #pc{
@@ -243,7 +243,7 @@ main{
         left: 471px;
         top: 201px;
     } 
-    #gout_dev, #security, #aboutme, #environnement{
+    #gout_dev, #security, #aboutme, #environnement, #indices{
         position: absolute;
         top: 10px;
         left: 10px;
@@ -262,7 +262,7 @@ main{
         width: 900px;
 
     }
-    #gout_dev, #aboutme, #environnement, #security {
+    #gout_dev, #aboutme, #environnement, #security, #indices {
         max-width: 700px;
     }
 }
@@ -328,7 +328,7 @@ main{
         left: 978px;
         top: 390px;
     } 
-    #gout_dev, #aboutme, #environnement, #security{
+    #gout_dev, #aboutme, #environnement, #security, #indices{
         position: absolute;
         top: 10px;
         left: 10px;
@@ -345,7 +345,7 @@ main{
         width: 1400px;
 
     }
-    #gout_dev, #environnement, #aboutme, #security {
+    #gout_dev, #environnement, #aboutme, #security, #indices {
         max-width: 1000px;
     }
 
@@ -414,7 +414,16 @@ main{
         top: 470px;
     } 
 
-    #gout_dev, #aboutme, #environnement, #security{
+    #help{
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 55px;
+        right: 10px;
+        top: 10px;
+    }
+
+    #gout_dev, #aboutme, #environnement, #security {
         position: absolute;
         top: 150px;
         left: 150px;
@@ -422,6 +431,14 @@ main{
         max-height: 300px;
         overflow: scroll;
     }
-
+    #indices {
+        position: absolute;
+        top: 30px;
+        right: -900px;
+        max-width: 300px;
+        max-height: 300px;
+        overflow: scroll;
+    }
+    
     
 }
