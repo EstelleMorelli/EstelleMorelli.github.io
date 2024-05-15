@@ -9,7 +9,6 @@ const radioEvent = {
   radioToggle: function () {
     radioEvent.radio.classList.toggle("on");
     if (radioEvent.radio.classList.contains("on")) {
-      //document.querySelector(".scripts").innerHTML = '<script class="script3" src="script3.js"></script>';
       document.querySelector(".styles").innerHTML ='<link class="style2" href="style2.css" rel="stylesheet">';
       } else {
       document.querySelector(".style2").remove();
