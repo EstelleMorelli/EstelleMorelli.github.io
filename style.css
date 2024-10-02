@@ -10,10 +10,70 @@ main{
     margin: auto;
     position: relative;
 }
+
 #danseurs{
     display: none;
     max-width: 20%;
 }
+
+/* Style général pour le conteneur des cartes */
+.creation-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem; /* 20px -> 1.25rem */
+    padding: 1.25rem; /* 20px -> 1.25rem */
+}
+
+/* Style des cartes */
+.creation {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.625rem; /* 10px -> 0.625rem */
+    box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 0px 4px 8px -> 0rem 0.25rem 0.5rem */
+    max-width: 18.75rem; /* 300px -> 18.75rem */
+    text-align: center;
+    padding: 1.25rem; /* 20px -> 1.25rem */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.1); /* 1px -> 0.0625rem */
+}
+
+/* Effet au survol de la carte */
+.creation:hover {
+    transform: translateY(-0.625rem); /* -10px -> -0.625rem */
+}
+
+/* Style des titres des cartes */
+.creation h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.625rem; /* 10px -> 0.625rem */
+}
+
+/* Style du texte des cartes */
+.creation p {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Style des liens dans les cartes */
+.creation a {
+    background-color: #5c9e87;
+    color: white;
+    padding: 0.625rem 0.9375rem; /* 10px 15px -> 0.625rem 0.9375rem */
+    border-radius: 0.3125rem; /* 5px -> 0.3125rem */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du lien */
+.creation a:hover {
+    background-color: #1d3e53;
+}
+
+
 
 #indication{
     position: fixed;
@@ -615,10 +675,10 @@ main{
 
     #gout_dev, #aboutme, #environnement, #security {
         position: absolute;
-        top: 150px;
+        top: 75px;
         left: 150px;
         max-width: 1100px;
-        max-height: 350px;
+        max-height: 600px;
     }
     #indices {
         position: absolute;
